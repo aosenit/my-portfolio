@@ -8,28 +8,29 @@
     <title>My PortFolio</title>
 </head>
 <body>
-    <div class="header">
-        <div class="my-name">Oseni Adedoyin</div>
+    <header>
+        <div class="heading">
+               <div class="my-name">Oseni Adedoyin</div>
 
-        <div class="home-nav">
-            <ul class="home-links">
-                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
+                <div class="home-nav" id="my-links">
+                        <ul class="home-links show" >
+                            <li class="nav__item"><a href="#home" class="nav-link current-page">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav-link ">About</a></li>
+                            <li class="nav__item"><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav__item"><a href="#work" class="nav-link">Work</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>  
+                </div> 
+                <div class="nav-toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                </div>
         </div>
-    </div>
+    </header>
 
     <main class="main-section">
         <section class="Home" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Adedoyin</span><br> Web Designer</h1>
+                    <h1 class="home__title ">Hi,<br>I'am <span class="home__title-color">Adedoyin</span><br> Web Designer</h1>
 
                     <a href="#" class="button">Contact</a> 
                     
@@ -50,7 +51,7 @@
             <h2 class="section-title">About</h2>
 
             <div class="about__container">
-                <div class="about__img">
+                <div class="about-img">
                     <img src="images/mypix.jpg" alt="about-image">
                 </div>
                 
@@ -155,24 +156,27 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
+                <form class="contact-form">
                     <input type="text" placeholder="Name..." class="contact__input">
                     <input type="mail" placeholder="Email..." class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                     <input type="button" value="Submit" class="contact__button button">
                 </form>
             </div>
-        </section>
+        </section>  
+       
     </main>
 
-    <footer class="footer">
-        <p class="footer__title">Adedoyin</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-        </div>
-        <p>&#169; 2021 copyright all right reserved</p>
+    <footer>
+            <div class="footer">
+                <p class="footer__title">Adedoyin</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+            </div>
     </footer>
 </body>
 <script src="script.js"></script>
