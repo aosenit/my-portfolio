@@ -1,0 +1,27 @@
+/* ===== FOOTER =====*/
+.footer {
+  background-color: white;
+  -webkit-box-shadow: 5px -5px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px -5px 3px rgba(0, 0, 0, 0.15);
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem 0;
+  min-height: 10%;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+.footer__social {
+  margin-bottom: 1rem;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=footer.css.map */

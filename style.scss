@@ -1,0 +1,200 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+button{
+    display: inline-block;
+    background-color: rgba(189, 24, 189, .7);
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: 600;
+    border-radius: .5rem; 
+    border: none;
+    margin-top: 3em;
+    font-size: 1em;
+    box-shadow: 2px 20px 10px rgba(0,0,0,.15);
+
+    &:hover{
+        background-color: white;
+        color: rgba(189, 24, 189, .7);
+    }
+
+}
+
+@import "sass-components/resets";
+@import "sass-components/header";
+@import "sass-components/main";
+@import "sass-components/footer";
+/* ===== MEDIA QUERIES=====*/
+@media screen and(min-width: 768px){
+    body{
+        margin: 0;
+        font-size: 1.25em;
+    }
+
+    .nav-logo{
+        color: white;
+    }
+    .section{
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-title{
+        margin-bottom: 3rem;
+
+        &::after{
+            width: 80px;
+            top: 3rem;
+        }
+    }
+
+    .nav{
+       
+        .my-links{
+            display: flex;
+            padding-top: 0;
+           
+        }
+        .my-links li{
+            margin-left: 3rem;
+            margin-bottom: 0;
+
+            a{
+                color: white;
+            }
+        }
+
+        .nav-toggle{
+            display: none;
+        }
+
+
+
+    }
+    .home{
+        height: 100vh;
+        &__data{
+            align-self: flex-end;
+        }
+        &__social{
+            padding-top: 0;
+            padding-bottom: 2.5rem;
+            flex-direction: row;
+            align-self: flex-end;
+
+            &-icon{
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+        &__img{
+            width: 20%;
+            bottom: 15%;
+        }
+    }
+
+    .about{
+        &__container{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            text-align: initial;
+        }
+        &__img{
+            & img{
+                width: 300px;
+            }
+        }
+    }
+    .skills{
+        &__container{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            text-align: initial;
+        }
+    }
+    .work{
+        &__container{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 2rem;
+        }
+    }
+    .contact{
+        &__form{
+            width: 360px;
+        }
+        &__container{
+            justify-items: center;
+        }
+    }
+
+}
+@media screen and(min-width: 767px){
+    .containment{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-logo{
+        font-size: .8em;
+    }
+
+    .nav-link{
+        font-size: 0.7em;
+       justify-content: center;
+    }
+    .home{
+
+            
+        .home__img{
+          
+           width: fit-content;
+           height: fit-content;
+            right: 17%;
+            top: 30%;
+        }
+    } 
+    .home__social-icon{
+           top: 10%;
+        }
+    
+}
+
+@media screen and(min-width: 1440px){
+   
+    .nav-logo{
+        font-size: 1.2em;
+    }
+
+    .nav-link{
+        font-size: 1.1em;
+       justify-content: center;
+    }
+
+    .home__title{
+        font-size: 3.5em;
+    }
+
+    .home__img{
+        clip-path: circle(50.1% at 50% 50%);
+        outline: hidden;
+        transition: all 2s ease;
+       
+    }
+
+    .home__img:hover{
+        clip-path: none;
+        
+    }
+
+    .contact__button{
+        font-weight: bolder;
+        font-size: 1.3em;
+        box-shadow: -5px 5px 3px rgba(0,0,0,.15) ;
+    }
+
+}
+
+
+
+
