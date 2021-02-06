@@ -421,16 +421,8 @@ header {
   .home__img {
     display: none;
   }
-}
-
-@media screen and (min-width: 360px) {
-  .home__img {
-    width: 200px;
-    -webkit-transform: translate(-20px, -90px);
-            transform: translate(-20px, -90px);
-    border-radius: 20px;
-    -webkit-clip-path: none;
-            clip-path: none;
+  .home {
+    text-align: center;
   }
 }
 

@@ -30,16 +30,12 @@ button{
     .home__img{
         display: none;
     }
+    .home{
+    text-align: center;
 }
 
-@media screen and (min-width:360px){
-    .home__img{
-        width: 200px;
-        transform: translate(-20px, -90px);
-        border-radius: 20px;
-        clip-path: none;
-    }
 }
+
 
 @media screen and(min-width: 768px){
     body{
