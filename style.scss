@@ -20,15 +20,31 @@ button{
 
 }
 
+
 @import "sass-components/resets";
 @import "sass-components/header";
 @import "sass-components/main";
 @import "sass-components/footer";
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width:280px){
+    .home__img{
+        display: none;
+    }
+}
+
+@media screen and (min-width:360px){
+    .home__img{
+        width: 200px;
+        transform: translate(-20px, -90px);
+        border-radius: 20px;
+        clip-path: none;
+    }
+}
+
 @media screen and(min-width: 768px){
     body{
         margin: 0;
-        font-size: 1.25em;
+        font-size: 10px;
     }
 
     .nav-logo{
@@ -161,7 +177,9 @@ button{
 }
 
 @media screen and(min-width: 1440px){
-   
+   body{
+       font-size: 14px;
+   }
     .nav-logo{
         font-size: 1.2em;
     }

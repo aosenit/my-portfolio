@@ -60,8 +60,8 @@ img {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   grid-column-gap: 2rem;
-  width: 90%;
-  min-width: 340px;
+  width: 95%;
+  min-width: 300px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
